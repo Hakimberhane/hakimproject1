@@ -1,0 +1,210 @@
+<div class="container" style = "margin-top:20px;background:#f8f8f8;">
+<div class="row flex-lg-nowrap">
+  <div class="col-12 col-lg-auto mb-3" style="width:200px;margin-top:10px">
+    <div class="card p-3">
+      <div class="e-navlist e-navlist--active-bg">
+        <ul class="nav">
+
+          <li class="nav-item"><a  [routerLink]="['/assignmentCreated', 1]"><i></i><span>Create student</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/assignmentCreated', 1]"><i></i><span>Assignment</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/resuourcesCreated', 1]"><i></i><span>Add resources</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+
+        </ul>
+       
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8" style="margin-top:10px">
+
+
+
+<div class="container mx-auto border" style="width:700px;padding:0px;margin:0px">
+    <h4 style="background-color:#1811; margin:0px;padding:0px">Create an assignment</h4>
+
+</div>
+<div class="container mx-auto border" style="width:700px;padding-top:0px;margin-top:0px;">
+    <div class="register-item">
+    <br>
+    <form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register form-group">
+
+  <div class="form-group">
+  
+        <label for="email">Assignment:</label>
+        <input type="text" class="form-control" placeholder="Enter First name" id="email" name="firstName" ngModel>
+  </div>
+   <div class="form-group">
+    <div class = "input-group">
+    <div class ="input-group-prepend">
+        <span class ="input-group-text" id ="fileAdd">Upload:</span>
+    </div>
+    </div>
+  </div>
+ 
+ <label for="email">Status :</label>
+
+  <div class="form-group" style="padding:0px">
+
+        <label class="radio-inline" style="margin-right:20px">
+          <input type="radio" name="gender" checked  value="Male" [(ngModel)]="gender">Non active
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="Female" [(ngModel)]="gender">Active
+        </label>
+  </div>
+   <div class="form-group" style="width:140px">
+
+        <label for="email">Grade:</label>
+ 
+ <select class="browser-default custom-select" [(ngModel)]="grade">
+              <option selected>Grade 1</option>
+              <option selected>Grade 2</option>
+              <option selected>Grade 3</option>
+              <option selected>Grade 4</option>
+              <option selected>Grade 5</option>
+              <option selected>Grade 6</option>
+              <option selected>Grade 7</option>
+              <option selected>Grade 8</option>
+              <option selected>Grade 9</option>
+
+            </select>
+</div>
+
+ 
+  <div class="form-group">
+        <label for="email">Due date:</label>
+        <input type="text" class="form-control" placeholder="Enter email" id="email" name="email" ngModel>
+  </div>
+  
+  <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" ngModel required>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary" >Create</button>
+
+</form>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-65">
+  <div class="container">
+   <div class="row">
+     <div class="col-xl-12 text-center">
+            <h2 class="mb-90"><b>Products</b></h2>
+     </div>
+   <div class="row">
+     <div class="col-6 col-xs-6 col-sm-6 col-md-3 d-flex align-items-stretch">
+         <a class="card" href="https://waystocap.com/en/construction-energy/china/caustic-soda-pearls-2291.html">
+            <img class="card-img-top" src="https://www.waystocap.com/uploads/70835.jpg" alt="Soude Caustique">
+            <div class="card-body">
+            <p class="highlight mb-0">From 567 USD / Metric Ton</p>
+            <h5 class="card-title mb-0 font-weight-bold">Caustic Soda 99% Pearls</h5>
+            <p class="mb-0 black-color">China</p>
+            </div>
+         </a>    
+     </div>
+      <div class="col-6 col-xs-6 col-sm-6 col-md-3 d-flex align-items-stretch">
+         <a class="card" href="https://www.waystocap.com/fr/alimentation-et-boissons/tunisie/couscous-2174.html">
+            <img class="card-img-top" src="https://www.waystocap.com/uploads/70835.jpg" alt="Soude Caustique">
+            <div class="card-body">
+            <p class="highlight mb-0">From 567 USD / Metric Ton</p>
+            <h5 class="card-title mb-0 font-weight-bold">Caustic Soda 99% Pearls</h5>
+            <p class="mb-0 black-color">China</p>
+            </div>
+         </a>    
+     </div>
+      <div class="col-6 col-xs-6 col-sm-6 col-md-3 d-flex align-items-stretch">
+         <a class="card" href="https://www.waystocap.com/en/food-beverage/morocco/soda-1944.html">
+            <img class="card-img-top" src="https://www.waystocap.com/uploads/70835.jpg" alt="Soude Caustique">
+            <div class="card-body">
+            <p class="highlight mb-0">From 567 USD / Metric Ton</p>
+            <h5 class="card-title mb-0 font-weight-bold">Caustic Soda 99% Pearls</h5>
+            <p class="mb-0 black-color">China</p>
+            </div>
+         </a>    
+     </div>
+      <div class="col-6 col-xs-6 col-sm-6 col-md-3 d-flex align-items-stretch">
+         <a class="card" href="https://www.waystocap.com/en/food-beverage/turkey/spaghetti-2466.html">
+            <img class="card-img-top" src="https://www.waystocap.com/uploads/49803.jpg" alt="Soude Caustique">
+            <div class="card-body">
+            <p class="highlight mb-0">From 567 USD / Metric Ton</p>
+            <h5 class="card-title mb-0 font-weight-bold">Caustic Soda 99% Pearls</h5>
+            <p class="mb-0 black-color">China</p>
+            </div>
+         </a>    
+     </div>
+   
+   </div>  
+   </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<div id = "home">
+
+  <nav class ="navbar navbar-dark bg-dark navbar-expand-md fixed-top" style="height:55px">
+   <div class = "container-fluid">
+
+       <a class ="navbar-brand" href ="#"><img src=""></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTS Available</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOW TO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+         </ul>
+       </div>
+
+   </div>
+
+  </nav>
+
+  </div>

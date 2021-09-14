@@ -1,0 +1,109 @@
+<div class="container" style = "margin-top:20px;background:#f8f8f8;">
+<div class="row flex-lg-nowrap">
+  <div class="col-12 col-lg-auto mb-3" style="width:200px;margin-top:10px">
+    <div class="card p-3">
+      <div class="e-navlist e-navlist--active-bg">
+        <ul class="nav">
+
+          <li class="nav-item"><a  [routerLink]="['/assignmentCreated', 1]"><i></i><span>Create student</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/assignmentCreated', 1]"><i></i><span>Assignment</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/resuourcesCreated', 1]"><i></i><span>Add resources</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+          <li class="nav-item"><a  [routerLink]="['/stprofile', 1]"><i></i><span>Results</span></a></li>
+
+        </ul>
+       
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8" style="margin-top:10px">
+
+
+
+<div class="container mx-auto border" style="width:700px;padding:0px;margin:0px">
+    <h4 style="background-color:#1811; margin:0px;padding:0px">Create a student account</h4>
+
+</div>
+<div class="container mx-auto border" style="width:700px;padding-top:0px;margin-top:0px;">
+    <div class="register-item">
+    <br>
+    <form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register form-group">
+
+  <div class="form-group">
+  
+        <label for="email">First name:</label>
+        <input type="text" class="form-control" placeholder="Enter First name" id="email" name="firstName" ngModel>
+  </div>
+  <div class="form-group">
+        <label for="email">Last name:</label>
+        <input type="text" class="form-control" placeholder="Enter Last name" id="email" name="lastName" ngModel>
+  </div>
+          <label for="email">Gender :</label>
+
+  <div class="form-group" style="padding:0px">
+
+        <label class="radio-inline" style="margin-right:20px">
+          <input type="radio" name="gender" checked  value="Male" [(ngModel)]="gender">Male
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="gender" value="Female" [(ngModel)]="gender">Female
+        </label>
+  </div>
+
+
+  <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="text" class="form-control" placeholder="Enter email" id="email" name="email" ngModel>
+  </div>
+   <div class="form-group">
+        <label for="email">Address:</label>
+        <input type="text" class="form-control" placeholder="Enter address" id="address" name="address" ngModel>
+  </div>
+  <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" ngModel required>
+  </div>
+
+  <div class="form-group" style="width:140px">
+
+        <label for="email">Grade:</label>
+ 
+ <select class="browser-default custom-select" [(ngModel)]="grade">
+              <option selected>Grade 1</option>
+              <option selected>Grade 2</option>
+              <option selected>Grade 3</option>
+              <option selected>Grade 4</option>
+              <option selected>Grade 5</option>
+              <option selected>Grade 6</option>
+              <option selected>Grade 7</option>
+              <option selected>Grade 8</option>
+              <option selected>Grade 9</option>
+
+            </select>
+</div>
+
+ 
+
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary" >Register</button>
+
+</form>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>

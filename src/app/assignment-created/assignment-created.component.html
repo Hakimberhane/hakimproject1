@@ -1,0 +1,69 @@
+<br>
+<div class="container mx-auto " style="padding:0px;margin:0px">
+
+   <h4 style=" margin-bottom:10px;padding:0px">Assignment created</h4>
+</div>
+
+<div class="container mx-auto " style="padding:0px;margin:0px">
+
+  <button class="btn btn-primary btn-primary" (click)="createAssignment()" >Create Assignment</button>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-primary btn-light">Action</button>
+  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split btn-light" data-toggle="dropdown">
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Link 1</a>
+    <a class="dropdown-item" href="#">Link 2</a>
+  </div>
+</div>
+
+
+</div>
+
+
+<div class="container mx-auto border" style="padding:0px;margin:0px">
+
+  <table class="table table-bordered table-striped">
+  <caption>There are not assignemts created at this time.</caption>
+
+    <thead>
+      <tr>
+<th>
+        <!-- Default unchecked -->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1">
+          <label class="custom-control-label" for="tableDefaultCheck1">Select all</label>
+        </div>
+      </th>
+        <th>Assignment</th>
+
+        <th>Grade</th>
+        <th>Date Created</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Teacher</th>
+
+      </tr>
+    </thead>  
+    <tbody>
+
+      <tr *ngFor="let item of students" class ="clickable" [routerLink]="['/stprofile', item.studentNo]">
+      <th scope="row">
+        <!-- Default unchecked -->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2">
+          <label class="custom-control-label" for="tableDefaultCheck2"></label>
+        </div>
+      </th>
+
+        <td>{{item.studentNo}}</td>
+       
+
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+
